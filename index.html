@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-1.12.4.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+            collapsible: true
+            });
+        } );
+    </script>
+</head>
+<body>
+    <!-- primary-menu -->
+    <div class="menu">
+        <div class="container container-big">
+            <div class="row menu--light">
+                <div class="brand">HIDOM</div>
+                <ul class="list">
+                    <li class="list__item"><a href="HI220">HI220</a></li>
+                    <li class="list__item"><a href="HI170">HI170</a></li>
+                    <li class="list__item"><a href="HI120">HI120</a></li>
+                    <li class="list__item"><a href="HI70">HI70</a></li>
+                    <li class="list__item"><a href="HI50">HI50</a></li> 
+                    <li class="list__item"><a href="all">Все дома</a></li>
+                    <li class="list__item"><a href="bani">Бани</a></li>
+                    <li class="list__item"><a href="bani">Для бизнеса</a></li>
+                </ul>
+                <div class="row j-self-end border-red">
+                    <div class="phone">+375(29) 3540500</div>
+                    <ul class="lang list">
+                        <li class="menu__item">RU</li>
+                        <li class="menu__item">EN</li>
+                    </ul>
+                    <button class="burger">
+                        <span>Меню</span>
+                        <span class="burger__img"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- secondary menu -->
+    <div class="menu menu--dark">
+        <div class="container container-big">
+            <div class="row">
+                <div class="logo--round">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image  x="0px" y="0px" width="33px" height="33px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABlVBMVEX/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/Gxv/ERH/trb/h4f/RET/////8fH/ICD/Dg7/2dn/rq7/BAT/Nzf/qan/pKT/paX/HBz/Fhb/MDD/Li7/DAz/GBj/LS3/CAj/Dw//KCj/Jib/KSn/ior/+/v/+fn/+vr/Tk7/kpL/Pj7/Y2P/+Pj/bm7/kJD/UlL/mZn/Q0P/amr/dnb/jo7/lZX/QkL/aGj/dHT/XFz/np7/7u7/5eX/9PT/0tL/u7v/vr7/vLz/5OT/TU3/UFD/lpb/UVH/l5f/Vlb/oKD/Rkb/e3v/oaH/nJz/nZ3/LCz/mpr/IiL/ODj/n5//Pz9RpU9XAAAAOXRSTlMACUSIu9fp8LqHEnfUEV/e3V4Lnp0VwBQMwaBcW+HgdQjYirnV5LiJeBBan78TDZybXXQKRYa35YUDDbOMAAAAAWJLR0Q/PmMwdQAAAAd0SU1FB+QGHQonIxkHzxcAAAGeSURBVDjLfZRXV8JAEIUXJFGKiqCIimAJ9t5HVOxiwYqKDexd7NgN1t/tLJEAZuU+ZO7JfDtn2ywhslTqNA3Hp/NchlatIkrp9AaIy6DP/AtkZUOyjDlJeZMZlMo1xYE8C7BkyY8B1gJGutsFUGD9JQpZBXp68WOWgCIW0OfuH8Bgo0BmMQMYHHK7h0cA7Dok9KwSo2Mez/gEGgchJaUYJ6e8Xu80mhk0s3MA8ws+3yLOFTgVUdMhS8v+lZVVNGto/OsAG/5AwB+kKTUpo2HTjdpCs03NDsAujXs0pSUaGvbpD1rjgJpDgCMaj2mqnHAyceJyuU4VhEB4mTgLhULnCsJJ0mVCVhLBJ9S4uLy6vmHUiM/jljlTIWEtYTR3CqKCVMrEPZoHBaGV9jQ69BHNEzXPAEEaX6Q9jZ5L+FUUI29oHl/FyPsHwOepKH59S+dCqiCV8GxJtT0FYI82hS0FUSNdw9p/gdxUd53KErvrJL+ODdTHW6qhkQE0WZP6stn4J28sUvR+i5CQNzh0jPehta29Q3DynUJHV1vC+/EDi2rT+kaj4EcAAAAASUVORK5CYII=" />
+                    </svg>
+                    <span>Сотрудничество</span>
+                </div>
+                <ul class="list j-self-end border-red">
+                    <li class="list__item"><a href="HI220">Вакансии</a></li>
+                    <li class="list__item"><a href="HI170">Архитекторам</a></li>
+                    <li class="list__item"><a href="HI120">Инвесторам</a></li>
+                    <li class="list__item"><a href="HI70">Землевладельцам</a></li>
+                    <li class="list__item"><a href="HI50">Агенствам</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+        <img src="img/banner.jpg" alt="">
+    </div>
+
+    <!-- vacancy list and send resume  -->
+    <div class="vacancy">
+        <div class="container container-small">
+            <ul class="vacancy__list" id="accordion">
+                <li>
+                    <div class="title">Руководитель проектов</div>
+                    <div class="description">
+                        <ul>
+                            <li>Управление командой менеджеров, ведение строительного процесса от закупки материалов до сдачи проекта клиенту</li>
+                            <li>Опыт работы от 5 лет</li>
+                            <li>Высокая заработная плата</li>
+                        </ul>
+                        <button class="btn">Отправить резюме</button>    
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="title">Менеджер по продажам</div>
+                    <div class="description">
+                        <ul>
+                            <li>Продажа команд менеджеров, ведение учетного процесса от закупки материалов до сдачи проекта клиенту</li>
+                            <li>Опыт работы от 15 лет</li>
+                            <li>Высокая заработная плата</li>
+                        </ul>
+                        <button class="btn">Отправить резюме</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">Архитектор</div>
+                    <div class="description">
+                        <ul>
+                            <li>Проектирование команд менеджеров, ведение строительного процесса от закупки материалов до сдачи проекта клиенту</li>
+                            <li>Опыт работы от 5 лет</li>
+                            <li>Высокая заработная плата</li>
+                        </ul>
+                        <button class="btn">Отправить резюме</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">Дизайнер</div>
+                    <div class="description">
+                        <ul>
+                            <li>Разработка дизайна команд менеджеров, ведение от первых эскизов до сдачи проекта клиенту</li>
+                            <li>Опыт работы от 2 лет</li>
+                            <li>Высокая заработная плата</li>
+                        </ul>
+                        <button class="btn">Отправить резюме</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">Маркетолог</div>
+                    <div class="description">
+                        <ul>
+                            <li>Управление командой менеджеров, ведение строительного процесса от закупки материалов до сдачи проекта клиенту</li>
+                            <li>Опыт работы от 5 лет</li>
+                            <li>Высокая заработная плата</li>
+                        </ul>
+                        <button class="btn">Отправить резюме</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">IT специалист</div>
+                    <div class="description">
+                        <ul>
+                            <li>Управление командой менеджеров, ведение строительного процесса от закупки материалов до сдачи проекта клиенту</li>
+                            <li>Опыт работы от 5 лет</li>
+                            <li>Высокая заработная плата</li>
+                        </ul>
+                        <button class="btn">Отправить резюме</button>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn">Отправить резюме</button>
+        </div>
+    </div>
+
+    <!-- subscribe -->
+    <div class="subscribe">
+        <div class="container container-middle">
+            <form class="form row" action="#">
+                <input 
+                    type="text"
+                    placeholder="Введите ваш email и будете получать рассылку с акциями, новостями и скидками"
+                >
+                <input class="btn" type="submit" value="Отправить">
+            </form>
+            
+        </div>
+    </div>
+
+    <!-- bottom-menu -->
+    <div class="bottom-menu">
+        <div class="container container-middle row">
+            <ul class="list">
+                <li class="list__item"><a href="#">О нас</a></li>
+                <li class="list__item"><a href="#">О компании</a></li>
+                <li class="list__item"><a href="#">Контакты</a></li>
+                <li class="list__item"><a href="#">Кредит</a></li>
+                <li class="list__item"><a href="#">Технологии строительства</a></li>
+                <li class="list__item"><a href="#">Как выбрать участок?</a></li>
+                <li class="list__item"><a href="#">Вопрос-ответ</a></li>
+            </ul>
+            <ul class="list">
+                <li class="list__item"><a href="#">Каталог</a></li>
+                <li class="list__item"><a href="#">Hi86</a></li>
+                <li class="list__item"><a href="#">Hi120</a></li>
+                <li class="list__item"><a href="#">Hi180</a></li>
+                <li class="list__item"><a href="#">Hi192T</a></li>
+                <li class="list__item"><a href="#">Для бизнеса</a></li>
+                <li class="list__item"><a href="#">Весь каталог</a></li>
+            </ul>
+            <ul class="list">
+                <li class="list__item"><a href="#">Сотрудничество</a></li>
+                <li class="list__item"><a href="#">Вакансии</a></li>
+                <li class="list__item"><a href="#">Партнерам</a></li>
+                <li class="list__item"><a href="#">Инвесторам</a></li>
+                <li class="list__item"><a href="#">Землевладельцам</a></li>
+                <li class="list__item"><a href="#">Агенствам</a></li>
+            </ul>
+            <ul class="list">
+                <li class="list__item">
+                    <a href="#Home">
+                        <span class="brand__mini">HI</span>
+                    </a>
+                </li>
+                <li class="list__item"><a href="#Instagram">Instagram</a></li>
+                <li class="list__item"><a href="#Facebook">Facebook</a></li>
+                <li class="list__item"><a href="#Youtube">Youtube</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer"></div>
+
+    
+
+</body>
+</html>
