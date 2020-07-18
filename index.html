@@ -4,72 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./style.css" rel="stylesheet">
-    <link rel="stylesheet" href="sidemenu.css">
-    <link rel="stylesheet" href="jquery-ui.css">
-    <script src="jquery-1.12.4.js"></script>
-    <script src="jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion({
-                collapsible: true
-            });
-        });
-    </script>
+    <title>HIDOM - vacancy</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/menu.css">  
 </head>
 
 <body>
     <!-- primary-menu -->
-    <div class="menu">
-        <div class="container container-big">
-            <div class="row menu--light">
-                <div class="brand">H<span id='triangle'>I</span>DOM</div>
-                <ul class="list">
-                    <li class="list__item"><a href="HI220">HI220</a></li>
-                    <li class="list__item"><a href="HI170">HI170</a></li>
-                    <li class="list__item"><a href="HI120">HI120</a></li>
-                    <li class="list__item"><a href="HI70">HI70</a></li>
-                    <li class="list__item"><a href="HI50">HI50</a></li>
-                    <li class="list__item"><a href="all">Все дома</a></li>
-                    <li class="list__item"><a href="bani">Бани</a></li>
-                    <li class="list__item"><a href="bani">Для бизнеса</a></li>
-                </ul>
-                <div class="row j-self-end">
-                    <div class="phone">
-                        <a href="tel:+375(29)3540500">+375(29)3540500</a>
-                    </div>
-                    <ul class="lang list">
-                        <li class="list__item"><a href="#ru">RU</a></li>
-                        <li class="list__item"><a href="#en">EN</a></li>
+    <div class="container">
+        <div class="menu navbar">
+            <ul class="menu menu--expand">
+                <li class="menu__item brand"><a href="/">H<span class='brand__triangle'>I</span>DOM</a></li>
+                <li class="menu__item"><a href="HI220">HI220</a></li>
+                <li class="menu__item"><a href="HI170">HI170</a></li>
+                <li class="menu__item"><a href="HI120">HI120</a></li>
+                <li class="menu__item"><a href="HI70">HI70</a></li>
+                <li class="menu__item"><a href="HI50">HI50</a></li>
+                <li class="menu__item"><a href="all">Все дома</a></li>
+                <li class="menu__item"><a href="bani">Бани</a></li>
+                <li class="menu__item"><a href="bani">Для бизнеса</a></li>
+            </ul>
+            <ul class="menu menu--strong menu--self-end">
+                <li class="phone"><a href="tel:+375(29)3540500">+375(29)3540500</a></li>
+                <li>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#ru">RU</a></li>
+                        <li class="menu__item"><a href="#en">EN</a></li>
                     </ul>
-                    <div class="burger">
-                        <input type="checkbox" id="show" class="checkbox1 visuallyHidden">
-                        <label for="show">
-                            <span>Меню</span>
-                            <div class="hamburger hamburger1">
-                                <span class="bar bar1"></span>
-                                <span class="bar bar2"></span>
-                                <span class="bar bar3"></span>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-            </div>
+                </li>
+                <li class="burger">
+                    <a href="#menu" class="burger__button">
+                        Menu
+                    </a>
+                    <ul class="menu burger__inner">
+                        <li class="menu__item"><a href="HI220">HI220</a></li>
+                        <li class="menu__item"><a href="HI170">HI170</a></li>
+                        <li class="menu__item"><a href="HI120">HI120</a></li>
+                        <li class="menu__item"><a href="HI70">HI70</a></li>
+                        <li class="menu__item"><a href="HI50">HI50</a></li>
+                        <li class="menu__item"><a href="all">Все дома</a></li>
+                        <li class="menu__item"><a href="bani">Бани</a></li>
+                        <li class="menu__item"><a href="bani">Для бизнеса</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-
-        <div id="nav" class="navigation">
-            <div class="navigation__inner">
-                <!--   Content   -->
-            </div>
-        </div>
-        <!-- <button id="show">Toggle Menu</button> -->
     </div>
 
     <!-- secondary menu -->
-    <div class="menu menu--dark">
-        <div class="container container-big">
-            <div class="row">
+    <div class="menu--dark">
+        <div class="container">
+            <div class="menu">
                 <div class="logo--round">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <image x="0px" y="0px" width="33px" height="33px"
@@ -77,12 +65,12 @@
                     </svg>
                     <span>Сотрудничество</span>
                 </div>
-                <ul class="list j-self-end">
-                    <li class="list__item"><a href="HI220">Вакансии</a></li>
-                    <li class="list__item"><a href="HI170">Архитекторам</a></li>
-                    <li class="list__item"><a href="HI120">Инвесторам</a></li>
-                    <li class="list__item"><a href="HI70">Землевладельцам</a></li>
-                    <li class="list__item"><a href="HI50">Агенствам</a></li>
+                <ul class="menu menu--rotate menu--self-end">
+                    <li class="menu__item"><a href="HI220">Вакансии</a></li>
+                    <li class="menu__item"><a href="HI170">Архитекторам</a></li>
+                    <li class="menu__item"><a href="HI120">Инвесторам</a></li>
+                    <li class="menu__item"><a href="HI70">Землевладельцам</a></li>
+                    <li class="menu__item"><a href="HI50">Агенствам</a></li>
                 </ul>
             </div>
         </div>
@@ -190,7 +178,7 @@
     </div>
 
     <!-- bottom-menu -->
-    <div class="bottom-menu">
+    <div class="bottom--menu">
         <div class="container container-middle row">
             <ul class="list">
                 <li class="list__item"><a href="#">О нас</a></li>
@@ -243,8 +231,18 @@
         </div>
     </div>
 
+    <div class="overlay"></div>
 
-    <script src="./sidemenu.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+    </script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
